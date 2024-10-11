@@ -1,7 +1,10 @@
 // console.log('hello, NodeJS')
 const express = require('express')
+const cors = require('cors')
+
 const app = express() //construindo uma aplicação express
 app.use(express.json())
+app.use(cors())
 
 let filmes = [
     {
